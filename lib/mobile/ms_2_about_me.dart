@@ -139,17 +139,17 @@ class MS2AboutMe extends StatelessWidget {
             bio(context),
             const SizedBox(height: 40.0),
             titles(context),
-            const SizedBox(height: 80.0),
-            Center(
-              child: ContainerBanner().type1(
-                  isDesktop: true,
-                  title1: DataValues.aboutMeBanner,
-                  title2: DataValues.aboutMeBannerTitle,
-                  description: DataValues.aboutMeBannerWeb,
-                  image: 'logo',
-                  message: 'View Profiles',
-                  url: DataValues.profilesURL),
-            ),
+            // const SizedBox(height: 80.0),
+            // Center(
+            //   child: ContainerBanner().type1(
+            //       isDesktop: true,
+            //       title1: DataValues.aboutMeBanner,
+            //       title2: DataValues.aboutMeBannerTitle,
+            //       description: DataValues.aboutMeBannerWeb,
+            //       image: 'logo',
+            //       message: 'View Profiles',
+            //       url: DataValues.profilesURL),
+            // ),
           ],
         ),
       ),

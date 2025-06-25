@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dileepa Bandara',
+      title: 'Ali Ismail',
       debugShowCheckedModeBanner: false,
       theme: AppThemeData.darkTheme,
       home: const HomePage(),

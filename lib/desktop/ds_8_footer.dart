@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 
 class DS8Footer extends StatelessWidget {
   const DS8Footer({Key? key}) : super(key: key);
+
   Widget getSourceCode(BuildContext context) {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
@@ -63,7 +64,8 @@ class DS8Footer extends StatelessWidget {
             height: 10,
           ),
           SelectableText(
-            DataValues.copyright,
+            DataValues.copyright
+                .replaceAll("#", DateTime.now().year.toString()),
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(

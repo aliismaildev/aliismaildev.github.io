@@ -64,7 +64,8 @@ class MS8Footer extends StatelessWidget {
             height: 10,
           ),
           SelectableText(
-            DataValues.copyright,
+            DataValues.copyright
+                .replaceAll("#", DateTime.now().year.toString()),
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(

@@ -72,7 +72,7 @@ class NavBar {
     Widget miniHeader() {
       return Column(
         children: [
-          Image.asset('assets/images/logo.png', height: 80.0, width: 80.0),
+          Image.asset('assets/images/logo.jpg', height: 80.0, width: 80.0),
           const SizedBox(height: 10.0),
           SelectableText(
             DataValues.headerName,

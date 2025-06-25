@@ -73,14 +73,14 @@ class DS7Contact extends StatelessWidget {
               height: 40.0,
             ),
             const SocialProfiles(),
-            const SizedBox(
-              height: 20.0,
-            ),
-            ContainerBanner().type2(
-              message:
-                  'Visit profile.dileepabandara.dev to view my all profiles >>',
-              url: DataValues.profilesURL,
-            ),
+            // const SizedBox(
+            //   height: 20.0,
+            // ),
+            // ContainerBanner().type2(
+            //   message:
+            //       'Visit profile.dileepabandara.dev to view my all profiles >>',
+            //   url: DataValues.profilesURL,
+            // ),
           ],
         ),
       ),

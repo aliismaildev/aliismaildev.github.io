@@ -9,7 +9,7 @@ class MS1Header extends StatelessWidget {
 
   List<Widget> headerData() {
     return [
-      Image.asset('assets/images/logo.png', height: 250.0, width: 250.0),
+      Image.asset('assets/images/logo.jpg', height: 250.0, width: 250.0),
       const SizedBox(height: 40.0),
       Column(
         children: [
