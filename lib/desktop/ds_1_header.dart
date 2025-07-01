@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../statics/data_values.dart';
@@ -10,25 +11,32 @@ class DS1Header extends StatelessWidget {
 
   List<Widget> headerData() {
     return [
-      Image.asset('assets/images/logo.jpg', height: 250.0, width: 250.0),
-      const SizedBox(width: 60.0),
       Column(
         children: [
-          SelectableText(
-            DataValues.headerGreetings,
-            style: AppThemeData.darkTheme.textTheme.headlineSmall,
-          ),
-          SelectableText(
-            DataValues.headerName,
-            style: AppThemeData.darkTheme.textTheme.displayMedium,
-          ),
-          SelectableText(
-            DataValues.headerTitle,
-            style: AppThemeData.darkTheme.textTheme.titleLarge,
-          ),
-          const SizedBox(height: 20.0),
-          const SocialProfiles(),
+          Image.asset('assets/images/logo.jpg', height: 250.0, width: 250.0),
         ],
+      ),
+      const SizedBox(width: 60.0),
+      Flexible(
+        child: Column(
+          children: [
+            SelectableText(
+              DataValues.headerGreetings,
+              style: AppThemeData.darkTheme.textTheme.headlineSmall,
+            ),
+            SelectableText(
+              DataValues.headerName,
+              style: AppThemeData.darkTheme.textTheme.displayMedium,
+            ),
+            SelectableText(
+              DataValues.headerTitle,
+              style: AppThemeData.darkTheme.textTheme.titleLarge,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 20.0),
+            const SocialProfiles(),
+          ],
+        ),
       ),
     ];
   }

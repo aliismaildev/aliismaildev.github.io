@@ -3,9 +3,17 @@ import 'package:flutter/material.dart';
 import '../statics/data_values.dart';
 import '../theme/app_theme.dart';
 import '../widgets/social_profiles.dart';
+import 'package:dileepabandara_dev/theme/responsive_screen_provider.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
+import '../statics/data_values.dart';
+import '../theme/app_theme.dart';
+import '../widgets/nav_bar.dart';
+import '../widgets/social_profiles.dart';
 class MS1Header extends StatelessWidget {
-  const MS1Header({Key? key}) : super(key: key);
+  final BuildContext context;
+  const MS1Header({Key? key,  required this.context}) : super(key: key);
 
   List<Widget> headerData() {
     return [
@@ -22,9 +30,17 @@ class MS1Header extends StatelessWidget {
             style: AppThemeData.darkTheme.textTheme.displayMedium,
             textAlign: TextAlign.center,
           ),
-          SelectableText(
-            DataValues.headerTitle,
-            style: AppThemeData.darkTheme.textTheme.titleLarge,
+          Padding(
+            padding: ResponsiveScreenProvider.isMobileScreen(context)
+                ? const EdgeInsets.symmetric(
+                horizontal: 400.0)
+                : EdgeInsets.zero,
+            child: SelectableText(
+              DataValues.headerTitle,
+              style: AppThemeData.darkTheme.textTheme.titleLarge,
+              textAlign: TextAlign.center,
+              // textAlign: TextAlign.center,
+            ),
           ),
           const SizedBox(height: 20.0),
           const SocialProfiles(),

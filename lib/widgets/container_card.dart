@@ -1,3 +1,6 @@
+import 'package:dileepabandara_dev/statics/data_values.dart';
+import 'package:dileepabandara_dev/widgets/button_icon.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:developer';
@@ -5,6 +8,7 @@ import 'dart:developer';
 import '../theme/app_theme.dart';
 import '../widgets/text_pairs.dart';
 import 'button_text.dart';
+import 'package:flutter/gestures.dart';
 
 class ContainerCard {
   Widget type1({
@@ -71,6 +75,8 @@ class ContainerCard {
     required List values,
     required String message,
     required Uri url,
+    String? link,
+    List<List<int>>? valueIndexes, // Optional index groups
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -81,7 +87,7 @@ class ContainerCard {
             color: Colors.black.withOpacity(0.2),
             spreadRadius: 2,
             blurRadius: 5,
-            offset: const Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -96,35 +102,56 @@ class ContainerCard {
               children: [
                 Image.asset('assets/images/$image.png', height: 70.0),
                 const SizedBox(height: 20.0),
-                SelectableText(title,
-                    style: TextStyle(
-                      fontSize: AppThemeData
-                          .darkTheme.textTheme.titleMedium!.fontSize,
-                      fontWeight: AppThemeData
-                          .darkTheme.textTheme.headlineSmall!.fontWeight,
-                      color: AppThemeData.textPrimary,
-                    )),
+                link != null
+                    ? RichText(
+                        text: TextSpan(
+                          text: title,
+                          style: TextStyle(
+                            fontSize: AppThemeData
+                                .darkTheme.textTheme.titleMedium!.fontSize,
+                            fontWeight: AppThemeData
+                                .darkTheme.textTheme.headlineSmall!.fontWeight,
+                            color: AppThemeData.textPrimary,
+                            decoration: TextDecoration.underline,
+                          ),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () async {
+                              final uri = Uri.tryParse(link);
+                              if (uri != null && await canLaunchUrl(uri)) {
+                                await launchUrl(uri);
+                              }
+                            },
+                        ),
+                      )
+                    : SelectableText(
+                        title,
+                        style: TextStyle(
+                          fontSize: AppThemeData
+                              .darkTheme.textTheme.titleMedium!.fontSize,
+                          fontWeight: AppThemeData
+                              .darkTheme.textTheme.headlineSmall!.fontWeight,
+                          color: AppThemeData.textPrimary,
+                        ),
+                      ),
                 const SizedBox(height: 10.0),
-                TextPairs().type2(
-                  title: values[0],
-                  value1: values[1],
-                  value2: values[2],
-                  isThreeLines: false,
-                ),
-                const SizedBox(height: 10.0),
-                TextPairs().type2(
-                  title: values[3],
-                  value1: values[4],
-                  value2: values[5],
-                  isThreeLines: false,
-                ),
-                const SizedBox(height: 10.0),
-                TextPairs().type2(
-                  title: values[6],
-                  value1: values[7],
-                  value2: values[8],
-                  isThreeLines: false,
-                ),
+
+                // Dynamically build the value sets
+                if (valueIndexes != null)
+                  ...valueIndexes.map((indexes) {
+                    if (indexes.length == 3 &&
+                        indexes.every((i) => i >= 0 && i < values.length)) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 10.0),
+                        child: TextPairs().type2(
+                          title: values[indexes[0]],
+                          value1: values[indexes[1]],
+                          value2: values[indexes[2]],
+                          isThreeLines: false,
+                        ),
+                      );
+                    }
+                    return const SizedBox.shrink(); // skip invalid index sets
+                  }),
               ],
             ),
             const SizedBox(height: 20.0),
@@ -142,11 +169,13 @@ class ContainerCard {
   Widget type3({
     required String image,
     required String title,
+    String? titleDesc,
     required String role,
     required String years,
     required String values,
     required String message,
     required Uri url,
+    String? link,
     required bool isButtonEnabled,
   }) {
     return Container(
@@ -173,15 +202,66 @@ class ContainerCard {
               children: [
                 Image.asset('assets/images/$image.png', height: 70.0),
                 const SizedBox(height: 20.0),
-                SelectableText(title,
-                    style: TextStyle(
-                      fontSize: AppThemeData
-                          .darkTheme.textTheme.titleMedium!.fontSize,
-                      fontWeight: AppThemeData
-                          .darkTheme.textTheme.headlineSmall!.fontWeight,
-                      color: AppThemeData.textPrimary,
-                    )),
-                const SizedBox(height: 10.0),
+                link != null
+                    ? Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          RichText(
+                            text: TextSpan(
+                              text: title,
+                              style: TextStyle(
+                                fontSize: AppThemeData
+                                    .darkTheme.textTheme.titleMedium!.fontSize,
+                                fontWeight: AppThemeData.darkTheme.textTheme
+                                    .headlineSmall!.fontWeight,
+                                color: AppThemeData.textPrimary,
+                                decoration: TextDecoration.underline,
+                              ),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () async {
+                                  final uri = Uri.tryParse(link);
+                                  if (uri != null && await canLaunchUrl(uri)) {
+                                    await launchUrl(uri);
+                                  }
+                                },
+                            ),
+                          ),
+                          if (titleDesc != null)
+                            Text(titleDesc,
+                                style: TextStyle(
+                                  fontSize: AppThemeData
+                                      .darkTheme.textTheme.bodyMedium!.fontSize,
+                                  fontWeight: AppThemeData.darkTheme.textTheme
+                                      .titleSmall!.fontWeight,
+                                  color: AppThemeData.textGreyDark,
+                                ))
+                        ],
+                      )
+                    : Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SelectableText(
+                            title,
+                            style: TextStyle(
+                              fontSize: AppThemeData
+                                  .darkTheme.textTheme.titleMedium!.fontSize,
+                              fontWeight: AppThemeData.darkTheme.textTheme
+                                  .headlineSmall!.fontWeight,
+                              color: AppThemeData.textPrimary,
+                            ),
+                          ),
+                          if (titleDesc != null)
+                            Text(titleDesc,
+                                style: TextStyle(
+                                  fontSize: AppThemeData
+                                      .darkTheme.textTheme.bodyMedium!.fontSize,
+                                  fontWeight: AppThemeData.darkTheme.textTheme
+                                      .titleSmall!.fontWeight,
+                                  color: AppThemeData.textGreyDark,
+                                ))
+                        ],
+                      ),
+                const SizedBox(height: 12.0),
                 TextPairs().type2(
                   title: role,
                   value1: years,
@@ -242,6 +322,124 @@ class ContainerCard {
           ),
         ),
       ],
+    );
+  }
+
+  Widget type5({
+    required String image,
+    required String title,
+    required String message,
+    required Uri url,
+    String? android,
+    String? ios,
+    String? github,
+    String? website,
+    List<String>? techStacks,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppThemeData.cardGrey,
+        borderRadius: BorderRadius.circular(10.0),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Image(
+            image: AssetImage(
+              'assets/images/$image.png',
+            ),
+          ),
+          const SizedBox(height: 20.0),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SelectableText(
+                  title,
+                  style: AppThemeData.darkTheme.textTheme.titleMedium?.copyWith(
+                    fontWeight: AppThemeData
+                        .darkTheme.textTheme.headlineSmall?.fontWeight,
+                    color: AppThemeData.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: 12.0),
+                SelectableText(
+                  message,
+                  style: AppThemeData.darkTheme.textTheme.labelLarge?.copyWith(
+                    color: AppThemeData.textGreyDark,
+                  ),
+                ),
+                if (techStacks != null && techStacks.isNotEmpty) ...[
+                  const SizedBox(height: 12.0),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: techStacks.map((tech) {
+                      return Container(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 6, horizontal: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.white24,
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(color: Colors.blueGrey.shade200),
+                        ),
+                        child: Text(
+                          tech,
+                          style: const TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                  const SizedBox(height: 40.0),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      if (android != null) ...[
+                        ButtonIcon(name: 'android', url: Uri.parse(android))
+                            .returnButton(),
+                        const SizedBox(
+                          width: 20.0,
+                        ),
+                      ],
+                      if (ios != null) ...[
+                        ButtonIcon(name: 'appstore', url: Uri.parse(ios))
+                            .returnButton(),
+                        const SizedBox(
+                          width: 20.0,
+                        ),
+                      ],
+                      if (website != null) ...[
+                        ButtonIcon(name: 'website', url: Uri.parse(website))
+                            .returnButton(),
+                        const SizedBox(
+                          width: 20.0,
+                        ),
+                      ],
+                      if (github != null) ...[
+                        ButtonIcon(name: 'github', url: Uri.parse(github))
+                            .returnButton(),
+                      ],
+                    ],
+                  )
+                ],
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

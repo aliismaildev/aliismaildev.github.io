@@ -22,27 +22,27 @@ class MS2AboutMe extends StatelessWidget {
             title: DataValues.aboutMeBiographyTitle,
             description: DataValues.aboutMeBiographyDescription,
           ),
-          const SizedBox(height: 20.0),
-          ButtonTextSmall(
-            text: 'View Full Biography >>',
-            message: DataValues.biographyURL.toString(),
-            url: DataValues.biographyURL,
-          ),
+          // const SizedBox(height: 20.0),
+          // ButtonTextSmall(
+          //   text: 'View Full Biography >>',
+          //   message: DataValues.biographyURL.toString(),
+          //   url: DataValues.biographyURL,
+          // ),
           const SizedBox(height: 30.0),
           TextPairs().type1(
             title: DataValues.aboutMeFullNameTitle,
             description: DataValues.aboutMeFullNameDescription,
           ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeNwITitle,
-            description: DataValues.aboutMeNwIDescription,
-          ),
-          const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeFnLTitle,
-            description: DataValues.aboutMeFnLDescription,
-          ),
+          // const SizedBox(height: 30.0),
+          // TextPairs().type1(
+          //   title: DataValues.aboutMeNwITitle,
+          //   description: DataValues.aboutMeNwIDescription,
+          // ),
+          // const SizedBox(height: 30.0),
+          // TextPairs().type1(
+          //   title: DataValues.aboutMeFnLTitle,
+          //   description: DataValues.aboutMeFnLDescription,
+          // ),
           const SizedBox(height: 30.0),
           TextPairs().type1(
             title: DataValues.aboutMeGenderTitle,

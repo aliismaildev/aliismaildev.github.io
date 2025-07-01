@@ -41,8 +41,10 @@ class DataValues {
   static const String navBarEducation = 'Education';
   static const String navBarExperience = 'Experience';
   static const String navBarVolunteering = 'Volunteering';
+  static const String navBarWorkShowCase = 'Work Showcase';
   static const String navBarTechNotes = 'TechNotes';
   static const String navBarContactMe = 'Contact Me';
+  static const String downloadResume = 'Download Resume';
 
   // About me
   static const String aboutMeTitle = 'About Me';
@@ -57,10 +59,11 @@ class DataValues {
 
   static const String aboutMeFullNameTitle = 'Full Name';
   static const String aboutMeFullNameDescription = 'Ali Ismail';
-  static const String aboutMeNwITitle = 'Name with Initials';
-  static const String aboutMeNwIDescription = 'A.I. Ali Ismail';
-  static const String aboutMeFnLTitle = 'First and Last Name';
-  static const String aboutMeFnLDescription = 'Ali Ismail';
+
+  // static const String aboutMeNwITitle = 'Name with Initials';
+  // static const String aboutMeNwIDescription = 'A.I. Ali Ismail';
+  // static const String aboutMeFnLTitle = 'First and Last Name';
+  // static const String aboutMeFnLDescription = 'Ali Ismail';
   static const String aboutMeDobTitle = 'Birthday';
   static const String aboutMeDobDescription = 'July 26, 1996';
   static const String aboutMeLanguageTitle = 'Languages';
@@ -91,68 +94,52 @@ class DataValues {
       'To grow both personally and professionally while contributing meaningfully to the community and ensuring the place I work grows and thrives alongside me';
   static const String aboutMeBanner = 'You can find my';
   static const String aboutMeBannerTitle = 'public profiles';
-  static const String aboutMeBannerWeb =
-      '';
+  static const String aboutMeBannerWeb = '';
 
   // Education
   static const String educationTitle = 'Education';
   static const String educationDescription =
       'My educational background is not specific in any particular way and has come from various places. In this section, you can find out about my formal and other sources from 2003 to now. So, here are my school, undergraduate institution, and other learning platforms that I\'ve been involving for education.';
-  static const String educationOrg1Title =
-      'Maliyadeva Adarsha M.V. - Sri Lanka';
-  static const String educationOrg1Course1Name = 'GCE Advanced Level';
+  static const String educationOrg1Title = 'The University of Lahore';
+  static const String educationOrg1Course1Name =
+      'Bachelor of Science in Software Engineering';
   static const String educationOrg1Course1Grade =
-      'Combined Maths, Physics, and Chemistry';
-  static const String educationOrg1Course1Year = 'Attempted: 2016 & 2017';
-  static const String educationOrg1Course2Name = 'GCE Ordinary Level ';
-  static const String educationOrg1Course2Grade = 'Passed with 6A, 3B';
-  static const String educationOrg1Course2Year = '2013';
-  static const String educationOrg1Course3Name = 'Education Period';
-  static const String educationOrg1Course3Year = 'Secondary: 2008 - 2016';
-  static const String educationOrg1Course3Year2 = 'Primary: 2003 - 2007';
+      'Focused on software development, system design, algorithms, and project management.';
+  static const String educationOrg1Course1Year = '2015-2019';
 
-  static const String educationOrg2Title = 'NIBM - Sri Lanka';
-  static const String educationOrg2Course1Name = 'BSc (Hons) Computing';
-  static const String educationOrg2Course1Grade =
-      'awarded by Coventry University, UK';
-  static const String educationOrg2Course1Year = '2022 - Ongoing';
+  static const String educationOrg2Title = 'ICT Trainings Institute';
+  static const String educationOrg2Course1Name =
+      'ICT Certified Android Developer';
+  static const String educationOrg2Course1Grade = 'Issued Sep 2018';
+  static const String educationOrg2Course1Year = 'Credential ID 3628-306-18';
   static const String educationOrg2Course2Name =
-      'Higher National Diploma in Software Engineering';
-  static const String educationOrg2Course2Grade =
-      'awarded by NIBM - Sri Lanka, 4.0 GPA';
-  static const String educationOrg2Course2Year = '2020 - 2021';
-  static const String educationOrg2Course3Name =
-      'Diploma in Computer System Design';
-  static const String educationOrg2Course3Grade =
-      'awarded by NIBM - Sri Lanka, 3.75 GPA';
-  static const String educationOrg2Course3Year = '2019 - 2020';
-  static const String educationBanner = 'These Are Some Of My Other';
-  static const String educationBannerTitle = 'Online Learning Platforms';
-  static const String educationBannerWeb =
-      'Click here to find out more about my online learning platforms.';
+      'ICT Certified Java Developer ';
+  static const String educationOrg2Course2Grade = 'Issued Sep 2018';
+  static const String educationOrg2Course2Year = 'Credential ID 3628-306-18';
 
   // Experience
   static const String experienceTitle = 'Experience';
   static const String experienceDescription =
       'Since I started my diploma in 2019, I\'ve started to learn and apply my knowledge in different places. So I started working as a freelance solution developer, and with time, I fell in love with different technologies. I received industrial training in my second year, and now I try out my experience.';
-  static const String experienceOrg1Title = 'Ali Ismail';
-  static const String experienceOrg1Role = 'Solution Developer';
-  static const String experienceOrg1Years = 'June 2019 - June 2022';
+  static const String experienceOrg1Title = 'M5AZN - المخازن الالكترونية';
+  static const String experienceOrg1Role = 'Full Stack Mobile Developer';
+  static const String experienceOrg1Years = 'Mar 2023 - Present';
   static const String experienceOrg1Vales =
       'Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.';
-  static const String experienceOrg2Title = 'DDS Techvira';
-  static const String experienceOrg2Role =
-      'Trainee Software Developer (Flutter)';
-  static const String experienceOrg2Years = 'May 2021 - November 2021';
+  static const String experienceOrg2Title = 'Magnatec Systems Private Limited';
+  static const String experienceOrg2Role = 'Senior Flutter Developer';
+  static const String experienceOrg2Years = 'Feb 2021 - Mar 2023';
   static const String experienceOrg2Vales =
       'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.';
   static const String experienceBanner = 'Find my working';
+
   // static const String experienceBannerTitle = 'toolkit';
   // static const String experienceBannerWeb =
   //     'Visit toolkit.dileepabandara.dev for more details >>';
 
   // Volunteering
   static const String volunteeringTitle = 'Volunteering';
+  static const String workShowCaseTitle = 'Work Showcase';
   static const String volunteeringDescription =
       'Volunteering is an amazing way for me to give back to communities and make a difference. It\'s also a terrific opportunity to meet new people, learn new skills, and gain valuable experience. I do volunteer work for many different social and technical organizations. These are more focused organizations where I am presently volunteering.';
   static const String volunteeringOrg1Title = 'FlutterScope';

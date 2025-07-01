@@ -44,16 +44,16 @@ class DS2AboutMe extends StatelessWidget {
                   title: DataValues.aboutMeFullNameTitle,
                   description: DataValues.aboutMeFullNameDescription,
                 ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeNwITitle,
-                  description: DataValues.aboutMeNwIDescription,
-                ),
-                const SizedBox(height: 30.0),
-                TextPairs().type1(
-                  title: DataValues.aboutMeFnLTitle,
-                  description: DataValues.aboutMeFnLDescription,
-                ),
+                // const SizedBox(height: 30.0),
+                // TextPairs().type1(
+                //   title: DataValues.aboutMeNwITitle,
+                //   description: DataValues.aboutMeNwIDescription,
+                // ),
+                // const SizedBox(height: 30.0),
+                // TextPairs().type1(
+                //   title: DataValues.aboutMeFnLTitle,
+                //   description: DataValues.aboutMeFnLDescription,
+                // ),
                 const SizedBox(height: 30.0),
                 TextPairs().type1(
                   title: DataValues.aboutMeGenderTitle,

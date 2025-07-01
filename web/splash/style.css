@@ -54,3 +54,8 @@ body {
   bottom: 0;
   right: 0;
 }
+#splash img {
+  width: 60vw; /* 60% of viewport width */
+  max-width: 500px; /* Optional max size */
+  height: auto; /* Maintain aspect ratio */
+}

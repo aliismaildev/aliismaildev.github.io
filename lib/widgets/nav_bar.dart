@@ -5,12 +5,28 @@ import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
 import 'button_rectangle.dart';
 import 'button_text.dart';
+import 'dart:html' as html;
 
 class NavBar {
+  void _downloadResume() {
+    const url =
+        'https://drive.google.com/uc?export=download&id=12jeD2-bjKpng9mdQKBg41eqywJnGI6bH';
+    html.AnchorElement anchor = html.AnchorElement(href: url)
+      ..setAttribute(
+          'download', 'Ali_Ismail_Resume.pdf') // optional: set filename
+      ..click();
+  }
+
   Widget desktopNavBar() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        ButtonRectangle(
+            name: DataValues.downloadResume,
+            onPressed: () => _downloadResume(),
+            color: AppThemeData.buttonPrimary,
+            message: DataValues.downloadResume),
+        const SizedBox(width: 20.0),
         ButtonTextLarge(
           text: DataValues.navBarAboutMe,
           onPressed: () => Scrollable.ensureVisible(
@@ -38,6 +54,17 @@ class NavBar {
           message: 'Go to ${DataValues.navBarExperience} section',
         ),
         const SizedBox(width: 20.0),
+
+        ButtonTextLarge(
+          text: DataValues.navBarWorkShowCase,
+          onPressed: () => Scrollable.ensureVisible(
+            KeyHolders.workShowcaseKey.currentContext!,
+            duration: const Duration(milliseconds: 1000),
+          ),
+          message: 'Go to ${DataValues.navBarWorkShowCase} section',
+        ),
+
+        const SizedBox(width: 20.0),
         ButtonTextLarge(
           text: DataValues.navBarVolunteering,
           onPressed: () => Scrollable.ensureVisible(
@@ -46,23 +73,23 @@ class NavBar {
           ),
           message: 'Go to ${DataValues.navBarVolunteering} section',
         ),
+
+        // const SizedBox(width: 20.0),
+        // ButtonTextLarge(
+        //   text: DataValues.navBarTechNotes,
+        //   onPressed: () => Scrollable.ensureVisible(
+        //     KeyHolders.technotesKey.currentContext!,
+        //     duration: const Duration(milliseconds: 1000),
+        //   ),
+        //   message: 'Go to ${DataValues.navBarTechNotes} section',
+        // ),
         const SizedBox(width: 20.0),
         ButtonTextLarge(
-          text: DataValues.navBarTechNotes,
-          onPressed: () => Scrollable.ensureVisible(
-            KeyHolders.technotesKey.currentContext!,
-            duration: const Duration(milliseconds: 1000),
-          ),
-          message: 'Go to ${DataValues.navBarTechNotes} section',
-        ),
-        const SizedBox(width: 20.0),
-        ButtonRectangle(
-            name: DataValues.navBarContactMe,
+            text: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(
                   KeyHolders.contactKey.currentContext!,
                   duration: const Duration(milliseconds: 1000),
                 ),
-            color: AppThemeData.buttonPrimary,
             message: 'Go to ${DataValues.navBarContactMe} section'),
       ],
     );
@@ -85,6 +112,7 @@ class NavBar {
           SelectableText(
             DataValues.headerTitle,
             style: AppThemeData.darkTheme.textTheme.labelLarge,
+            textAlign: TextAlign.center,
           ),
         ],
       );
@@ -97,6 +125,13 @@ class NavBar {
         children: [
           const SizedBox(height: 60.0),
           miniHeader(),
+          const SizedBox(height: 20.0),
+          ButtonRectangle(
+            name: DataValues.downloadResume,
+            onPressed: () => _downloadResume(),
+            color: AppThemeData.buttonPrimary,
+            message: DataValues.downloadResume,
+          ),
           const SizedBox(height: 20.0),
           ButtonTextLarge(
             text: DataValues.navBarAboutMe,
@@ -125,6 +160,17 @@ class NavBar {
             message: 'Go to ${DataValues.navBarExperience} section',
           ),
           const SizedBox(height: 20.0),
+
+          ButtonTextLarge(
+            text: DataValues.navBarWorkShowCase,
+            onPressed: () => Scrollable.ensureVisible(
+              KeyHolders.workShowcaseKey.currentContext!,
+              duration: const Duration(milliseconds: 1000),
+            ),
+            message: 'Go to ${DataValues.navBarWorkShowCase} section',
+          ),
+
+          const SizedBox(height: 20.0),
           ButtonTextLarge(
             text: DataValues.navBarVolunteering,
             onPressed: () => Scrollable.ensureVisible(
@@ -133,23 +179,22 @@ class NavBar {
             ),
             message: 'Go to ${DataValues.navBarVolunteering} section',
           ),
+          // const SizedBox(height: 20.0),
+          // ButtonTextLarge(
+          //   text: DataValues.navBarTechNotes,
+          //   onPressed: () => Scrollable.ensureVisible(
+          //     KeyHolders.technotesKey.currentContext!,
+          //     duration: const Duration(milliseconds: 1000),
+          //   ),
+          //   message: 'Go to ${DataValues.navBarTechNotes} section',
+          // ),
           const SizedBox(height: 20.0),
           ButtonTextLarge(
-            text: DataValues.navBarTechNotes,
-            onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.technotesKey.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
-            message: 'Go to ${DataValues.navBarTechNotes} section',
-          ),
-          const SizedBox(height: 20.0),
-          ButtonRectangle(
-              name: DataValues.navBarContactMe,
+              text: DataValues.navBarContactMe,
               onPressed: () => Scrollable.ensureVisible(
                     KeyHolders.contactKey.currentContext!,
                     duration: const Duration(milliseconds: 1000),
                   ),
-              color: AppThemeData.buttonPrimary,
               message: 'Go to ${DataValues.navBarContactMe} section'),
         ],
       ),

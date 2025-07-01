@@ -16,8 +16,11 @@ dependencies:
   flutter_native_splash: ^2.2.17
 
 flutter_native_splash:
-  image: assets/images/splash.png
-  color: "#121212"
+  web: true
+  color: "#121212"  # or your background color
+  image: assets/images/splash.png  # your web splash image
+  android: false
+  ios: false
 
 dev_dependencies:
   flutter_test:
