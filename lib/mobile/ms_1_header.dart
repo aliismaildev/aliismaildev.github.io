@@ -11,9 +11,11 @@ import '../statics/data_values.dart';
 import '../theme/app_theme.dart';
 import '../widgets/nav_bar.dart';
 import '../widgets/social_profiles.dart';
+
 class MS1Header extends StatelessWidget {
   final BuildContext context;
-  const MS1Header({Key? key,  required this.context}) : super(key: key);
+
+  const MS1Header({Key? key, required this.context}) : super(key: key);
 
   List<Widget> headerData() {
     return [
@@ -30,17 +32,11 @@ class MS1Header extends StatelessWidget {
             style: AppThemeData.darkTheme.textTheme.displayMedium,
             textAlign: TextAlign.center,
           ),
-          Padding(
-            padding: ResponsiveScreenProvider.isMobileScreen(context)
-                ? const EdgeInsets.symmetric(
-                horizontal: 400.0)
-                : EdgeInsets.zero,
-            child: SelectableText(
-              DataValues.headerTitle,
-              style: AppThemeData.darkTheme.textTheme.titleLarge,
-              textAlign: TextAlign.center,
-              // textAlign: TextAlign.center,
-            ),
+          SelectableText(
+            DataValues.headerTitle,
+            style: AppThemeData.darkTheme.textTheme.titleLarge,
+            textAlign: TextAlign.center,
+            // textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20.0),
           const SocialProfiles(),

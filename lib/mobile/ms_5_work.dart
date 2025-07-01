@@ -57,12 +57,49 @@ class _MS5WorkState extends State<MS5Work> {
           'OneSignal',
           'Figma',
         ],
-
         website: "https://twsaa.com/company/expand",
         android:
             "https://play.google.com/store/apps/details?id=com.twsaa.admin",
         ios:
             "https://apps.apple.com/sa/app/twsaa-%D8%AA%D9%88%D8%B3%D8%B9/id6468932135"),
+    // M5azn-wms
+
+    ContainerCard().type5(
+      image: 'm5azn-wms-banner',
+      title: "M5AZN WMS",
+      message:
+          "M5azn WMS is a complete warehouse management solution to track inventory, manage orders, and streamline shipping. It automates manual tasks, ensures stock accuracy, and supports smooth, scalable operations for growing businesses.",
+      url: DataValues.linkedinURL,
+      techStacks: [
+        'Flutter',
+        'REST API',
+        'Firebase',
+        'Payment methods',
+        'OneSignal',
+        'Figma',
+      ],
+      website: "https://m5aznwms.com",
+    ),
+    // rufoof
+    ContainerCard().type5(
+        image: 'rufoof-banner',
+        title: "Rufoof: eBooks & Audiobooks",
+        message:
+            "Ruvoof is a free eBook app with a rich library of Arabic and English books. It features fast reading, smart search, note-taking, and a unique rewards system—making reading more enjoyable and accessible across all your devices.",
+        url: DataValues.linkedinURL,
+        techStacks: [
+          'Flutter',
+          'REST API',
+          'Firebase',
+          'Payment methods',
+          'OneSignal',
+          'Figma',
+        ],
+        website: "https://rufoof.com",
+        android:
+            "https://play.google.com/store/apps/details?id=co.yaqut.app&hl=en",
+        ios:
+            "https://apps.apple.com/sa/app/%D8%B1%D9%81%D9%88%D9%81-%D9%83%D8%AA%D8%A8-%D8%B5%D9%88%D8%AA%D9%8A%D8%A9-%D9%88%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/id1115820042"),
   ];
 
   void _goToPage(int index) {
@@ -74,6 +111,7 @@ class _MS5WorkState extends State<MS5Work> {
       );
     }
   }
+
   @override
   Widget build(BuildContext context) {
     final totalPages = cardSlides.length;
