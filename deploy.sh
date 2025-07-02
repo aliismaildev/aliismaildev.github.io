@@ -1,25 +1,18 @@
 #!/bin/bash
 
-# Generate a unique build version using timestamp
 BUILD_VERSION=$(date +%s)
-echo "Building Flutter Web with version: $BUILD_VERSION"
+echo "Building version $BUILD_VERSION"
 
-# Build with version definition
+# Build with version passed in (optional for Dart use)
 flutter build web --dart-define=BUILD_VERSION=$BUILD_VERSION || exit 1
 
-# Inject version into index.html to force cache busting
-INDEX_FILE="build/web/index.html"
-if [ -f "$INDEX_FILE" ]; then
-  # Append version to main.dart.js and flutter.js references
-  sed -i '' "s/main\.dart\.js/main.dart.js?v=$BUILD_VERSION/g" $INDEX_FILE
-  sed -i '' "s/flutter\.js/flutter.js?v=$BUILD_VERSION/g" $INDEX_FILE
-  echo "Injected version parameter into index.html"
-else
-  echo "index.html not found!"
-  exit 1
-fi
+# Update the serviceWorkerVersion in index.html
+sed -i '' "s/const serviceWorkerVersion = \".*\";/const serviceWorkerVersion = \"$BUILD_VERSION\";/g" build/web/index.html
 
-# Git deploy as before
+# OPTIONAL: Update service worker cache name to avoid stale caches
+sed -i '' "s/flutter-app-cache/flutter-app-cache-$BUILD_VERSION/g" build/web/flutter_service_worker.js
+
+# Deploy to gh-pages branch
 git add build/web -f
 git commit -m "Update build $BUILD_VERSION"
 git subtree split --prefix build/web -b temp-deploy-branch
