@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-
 import '../statics/data_values.dart';
 import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
 import '../widgets/container_card.dart';
 import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
+import '../statics/portfolio_data.dart'; // Assuming experienceData is defined here
 
 class DS4Experience extends StatelessWidget {
   const DS4Experience({Key? key}) : super(key: key);
@@ -15,88 +15,31 @@ class DS4Experience extends StatelessWidget {
     return Container(
       key: KeyHolders.experienceKey,
       color: AppThemeData.backgroundGrey,
-      child: Padding(
+      child: SingleChildScrollView(
         padding: const EdgeInsets.all(40.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const FrameTitle(
-                title: DataValues.experienceTitle,
-                description: DataValues.experienceDescription),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: ContainerCard().type3(
-                    image: 'm5azn',
-                    title: DataValues.experienceOrg1Title,
-                    role: DataValues.experienceOrg1Role,
-                    years: DataValues.experienceOrg1Years,
-                    values: DataValues.experienceOrg1Vales,
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                    isButtonEnabled: true,
-                  ),
-                ),
-                SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                Expanded(
-                  child: ContainerCard().type3(
-                    image: 'magnatec',
-                    title: DataValues.experienceOrg2Title,
-                    role: DataValues.experienceOrg2Role,
-                    years: DataValues.experienceOrg2Years,
-                    values: DataValues.experienceOrg2Vales,
-                    message: DataValues.linkedinURL.toString(),
-                    url: DataValues.linkedinURL,
-                    isButtonEnabled: true,
-                  ),
-                ),
-              ],
+              title: DataValues.experienceTitle,
+              description: DataValues.experienceDescription,
             ),
-            // SizedBox(height: 10.0,),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //   crossAxisAlignment: CrossAxisAlignment.start,
-            //   children: [
-            //     Expanded(
-            //       child: ContainerCard().type3(
-            //         image: 'm5azn',
-            //         title: DataValues.experienceOrg1Title,
-            //         role: DataValues.experienceOrg1Role,
-            //         years: DataValues.experienceOrg1Years,
-            //         values: DataValues.experienceOrg1Vales,
-            //         message: DataValues.linkedinURL.toString(),
-            //         url: DataValues.linkedinURL,
-            //         isButtonEnabled: true,
-            //       ),
-            //     ),
-            //     SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-            //     Expanded(
-            //       child: ContainerCard().type3(
-            //         image: 'magnatec',
-            //         title: DataValues.experienceOrg2Title,
-            //         role: DataValues.experienceOrg2Role,
-            //         years: DataValues.experienceOrg2Years,
-            //         values: DataValues.experienceOrg2Vales,
-            //         message: DataValues.linkedinURL.toString(),
-            //         url: DataValues.linkedinURL,
-            //         isButtonEnabled: true,
-            //       ),
-            //     ),
-            //   ],
-            // ),
-            // const SizedBox(height: 80.0),
-            // Center(
-            //   child: ContainerBanner().type1(
-            //       isDesktop: true,
-            //       title1: DataValues.experienceBanner,
-            //       title2: DataValues.experienceBannerTitle,
-            //       description: DataValues.experienceBannerWeb,
-            //       image: 'logo',
-            //       message: 'View Toolkit',
-            //       url: DataValues.toolkitURL),
-            // ),
+            const SizedBox(height: 20),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              padding: const EdgeInsets.only(bottom: 15.0),
+              itemCount: experienceData.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 16.0,
+                mainAxisSpacing: 16.0,
+                childAspectRatio: 1.3,
+              ),
+              itemBuilder: (context, index) {
+                return experienceData[index];
+              },
+            ),
           ],
         ),
       ),

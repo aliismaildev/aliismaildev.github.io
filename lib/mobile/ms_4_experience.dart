@@ -1,10 +1,9 @@
+import 'package:dileepabandara_dev/statics/portfolio_data.dart';
 import 'package:flutter/material.dart';
 
 import '../statics/data_values.dart';
 import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
-import '../widgets/container_card.dart';
-import '../widgets/container_banner.dart';
 import '../widgets/frame_title.dart';
 
 class MS4Experience extends StatefulWidget {
@@ -18,87 +17,8 @@ class _MS4ExperienceState extends State<MS4Experience> {
   final PageController _controller = PageController();
   int _currentPage = 0;
 
-  // Replace with your actual data
-  final List<Widget> cardSlides = [
-    ContainerCard().type3(
-      image: 'm5azn',
-      title: 'M5AZN - المخازن الالكترونية',
-      link: "https://m5azn.com",
-      titleDesc: "(Remote)",
-      role: 'Full Stack Mobile Developer',
-      years: "Mar 2023 - Present",
-      values:
-          'Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-    ContainerCard().type3(
-      image: 'magnatec',
-      title: 'Magnatec Systems Private Limited',
-      link: "https://magnatecsystems.com",
-      role: 'Senior Flutter Developer',
-      years: 'Feb 2021 - Mar 2023',
-      values:
-          'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-    ContainerCard().type3(
-      image: 'solobits',
-      title: 'SoloBits.dev',
-      link: "https://www.solobits.dev",
-      titleDesc: "(Remote & Part-Time)",
-      role: 'Flutter Project Manager',
-      years: 'Mar 2022 - Feb 2023',
-      values:
-          'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-    ContainerCard().type3(
-      image: 'telebu',
-      title: 'Telebu Communications LLP',
-      link: "https://www.solobits.dev",
-      titleDesc: "(Remote & Part-Time)",
-      role: 'Android Consultant',
-      years: 'Aug 2021 - Feb 2022',
-      values:
-          'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-    ContainerCard().type3(
-      image: 'highapp',
-      title: 'HighApp Solutions',
-      link: "http://highapp.co.uk/",
-      role: 'Flutter Developer',
-      years: 'Sep 2020 - Feb 2021',
-      values:
-          'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-    ContainerCard().type3(
-      image: 'technovier',
-      title: 'Technovier',
-      link: "https://www.technovier.com",
-      role: 'Associate Software Engineer',
-      years: 'Oct 2019 - Sep 2020',
-      values:
-          'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
-      message: DataValues.linkedinURL.toString(),
-      url: DataValues.linkedinURL,
-      isButtonEnabled: true,
-    ),
-  ];
-
   void _goToPage(int index) {
-    if (index >= 0 && index < cardSlides.length) {
+    if (index >= 0 && index < experienceData.length) {
       _controller.animateToPage(
         index,
         duration: Duration(milliseconds: 300),
@@ -109,7 +29,7 @@ class _MS4ExperienceState extends State<MS4Experience> {
 
   @override
   Widget build(BuildContext context) {
-    final totalPages = cardSlides.length;
+    final totalPages = experienceData.length;
     return Container(
       key: KeyHolders.experienceKey,
       color: AppThemeData.backgroundGrey,
@@ -146,7 +66,7 @@ class _MS4ExperienceState extends State<MS4Experience> {
                       itemBuilder: (context, index) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 15.0),
-                          child: cardSlides[index],
+                          child: experienceData[index],
                         );
                       },
                     ),

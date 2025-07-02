@@ -1,10 +1,9 @@
+import 'package:dileepabandara_dev/statics/portfolio_data.dart';
 import 'package:flutter/material.dart';
 
 import '../statics/data_values.dart';
 import '../statics/key_holders.dart';
 import '../theme/app_theme.dart';
-import '../widgets/container_banner.dart';
-import '../widgets/container_card.dart';
 import '../widgets/frame_title.dart';
 
 class DS5Work extends StatelessWidget {
@@ -22,50 +21,23 @@ class DS5Work extends StatelessWidget {
           children: [
             const FrameTitle(
                 title: DataValues.workShowCaseTitle,
-                description: DataValues.volunteeringDescription),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //   crossAxisAlignment: CrossAxisAlignment.start,
-            //   children: [
-            //     Expanded(
-            //       child: ContainerCard().type3(
-            //         image: 'flutterscope',
-            //         title: DataValues.volunteeringOrg1Title,
-            //         role: DataValues.volunteeringOrg1Role,
-            //         years: DataValues.volunteeringOrg1Years,
-            //         values: DataValues.volunteeringOrg1Vales,
-            //         message: DataValues.linkedinURL.toString(),
-            //         url: DataValues.linkedinURL,
-            //         isButtonEnabled: true,
-            //       ),
-            //     ),
-            //     SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-            //     Expanded(
-            //       child: ContainerCard().type3(
-            //         image: 'mlsa',
-            //         title: DataValues.volunteeringOrg2Title,
-            //         role: DataValues.volunteeringOrg2Role,
-            //         years: DataValues.volunteeringOrg2Years,
-            //         values: DataValues.volunteeringOrg2Vales,
-            //         message: DataValues.linkedinURL.toString(),
-            //         url: DataValues.linkedinURL,
-            //         isButtonEnabled: true,
-            //       ),
-            //     ),
-            //   ],
-            // ),
-            // const SizedBox(height: 80.0),
-            // Center(
-            //   child: ContainerBanner().type1(
-            //     isDesktop: true,
-            //     title1: DataValues.volunteeringBanner,
-            //     title2: DataValues.volunteeringBannerTitle,
-            //     description: DataValues.volunteeringBannerWeb,
-            //     image: 'image',
-            //     message: 'Volunteering Profile',
-            //     url: DataValues.volunteeringURL,
-            //   ),
-            // ),
+                description: DataValues.workShowCaseDescription),
+            const SizedBox(height: 20),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              padding: const EdgeInsets.only(bottom: 15.0),
+              itemCount: workData.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 4,
+                crossAxisSpacing: 30.0,
+                mainAxisSpacing: 30.0,
+                childAspectRatio: 0.5,
+              ),
+              itemBuilder: (context, index) {
+                return workData[index];
+              },
+            ),
           ],
         ),
       ),

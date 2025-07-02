@@ -142,6 +142,8 @@ class DataValues {
   static const String workShowCaseTitle = 'Work Showcase';
   static const String volunteeringDescription =
       'Volunteering is an amazing way for me to give back to communities and make a difference. It\'s also a terrific opportunity to meet new people, learn new skills, and gain valuable experience. I do volunteer work for many different social and technical organizations. These are more focused organizations where I am presently volunteering.';
+  static const String workShowCaseDescription =
+      'From corporate systems to freelance projects, this is where I highlight the apps and platforms I’ve helped bring to life. It covers everything from mobile app development and backend integration to UI/UX design and feature optimization. Each project reflects my hands-on approach, problem-solving mindset, and commitment to delivering high-quality digital solutions.';
   static const String volunteeringOrg1Title = 'FlutterScope';
   static const String volunteeringOrg1Role = 'Content Creator';
   static const String volunteeringOrg1Years = 'January 2022 - Present';
