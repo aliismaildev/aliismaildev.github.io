@@ -45,7 +45,7 @@ class _MS4ExperienceState extends State<MS4Experience> {
 
             Container(
               constraints: BoxConstraints(
-                maxHeight: 400,
+                maxHeight: 570,
               ),
               child: Row(
                 children: [

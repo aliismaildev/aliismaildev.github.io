@@ -89,7 +89,6 @@ final List<Widget> workData = [
           "https://apps.apple.com/sa/app/%D8%B1%D9%81%D9%88%D9%81-%D9%83%D8%AA%D8%A8-%D8%B5%D9%88%D8%AA%D9%8A%D8%A9-%D9%88%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/id1115820042"),
 ];
 
-
 final List<Widget> experienceData = [
   ContainerCard().type3(
     image: 'm5azn',
@@ -99,7 +98,7 @@ final List<Widget> experienceData = [
     role: 'Full Stack Mobile Developer',
     years: "Mar 2023 - Present",
     values:
-    'Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.',
+        'There, I worked as a Full Stack Mobile Developer, leading the development of M5AZN’s mobile app and a comprehensive WMS suite to streamline warehouse and logistics operations. I designed and built high-impact solutions for inventory, dispatch, barcode scanning, and real-time stock updates. I also spearheaded the launch of Twsaa, a new SaaS-based mobile and backend system, contributing to the company’s digital transformation.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,
@@ -111,7 +110,7 @@ final List<Widget> experienceData = [
     role: 'Senior Flutter Developer',
     years: 'Feb 2021 - Mar 2023',
     values:
-    'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
+        'As a Senior Flutter Developer, I built robust POS modules for SMACC and SCRIBES ERP systems, applying design patterns like MVC, MVP, and MVVM. I integrated REST/SOAP APIs, Firebase, Moor DB, and Google services to deliver scalable features. I focused on writing clean, testable code with high coverage, and collaborated closely with QA, product, and design teams to tackle complex Android issues and ensure smooth, stable releases.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,
@@ -124,7 +123,7 @@ final List<Widget> experienceData = [
     role: 'Flutter Project Manager',
     years: 'Mar 2022 - Feb 2023',
     values:
-    'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
+        'As a Flutter Project Manager, I led the development of key features for Dailyway, a carpool app designed to ensure smooth and reliable user-driver interactions. I also developed the admin panel using Flutter Web, integrating Google Maps APIs, Firestore, and Google Cloud Storage for real-time data and map services.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,
@@ -137,7 +136,7 @@ final List<Widget> experienceData = [
     role: 'Android Consultant',
     years: 'Aug 2021 - Feb 2022',
     values:
-    'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
+        'I developed a Flutter plugin for the native video conferencing SDK Telebu Join, enabling smooth cross-platform in-app communication. I also contributed to FaraPay, a digital payment solution, by implementing new features, optimizing performance, and ensuring a seamless user experience on both Android and iOS.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,
@@ -149,7 +148,7 @@ final List<Widget> experienceData = [
     role: 'Flutter Developer',
     years: 'Sep 2020 - Feb 2021',
     values:
-    'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
+        'Led the development, testing, and on-time delivery of various freelance mobile applications using Flutter in a fast-paced, project-based environment. Managed and assigned daily tasks across multiple projects to ensure smooth collaboration and productivity among developers. Successfully integrated REST/SOAP APIs, Firebase (Firestore, Cloud Messaging), push notifications, and socket-based communication to deliver high-performance and feature-rich app solutions.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,
@@ -161,7 +160,7 @@ final List<Widget> experienceData = [
     role: 'Associate Software Engineer',
     years: 'Oct 2019 - Sep 2020',
     values:
-    'Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.',
+        'Developed and delivered web and mobile applications using Flutter, Laravel, and modern web technologies. Built RESTful APIs for smooth backend-frontend integration. Maintained and customized the company’s WordPress website, including themes and plugins. Involved in the full development lifecycle—from requirements to deployment and support—ensuring timely and high-quality delivery.',
     message: DataValues.linkedinURL.toString(),
     url: DataValues.linkedinURL,
     isButtonEnabled: true,

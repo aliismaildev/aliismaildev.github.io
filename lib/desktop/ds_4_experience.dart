@@ -32,7 +32,7 @@ class DS4Experience extends StatelessWidget {
                 children: experienceData.map((widget) {
                   return ConstrainedBox(
                     constraints: const BoxConstraints(
-                      maxHeight: 400,
+                      maxHeight: 550,
                       maxWidth: 400, // behaves like maxCrossAxisExtent
                     ),
                     child: widget,

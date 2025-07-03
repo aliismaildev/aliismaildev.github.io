@@ -120,7 +120,7 @@ class DataValues {
   // Experience
   static const String experienceTitle = 'Experience';
   static const String experienceDescription =
-      'Since I started my diploma in 2019, I\'ve started to learn and apply my knowledge in different places. So I started working as a freelance solution developer, and with time, I fell in love with different technologies. I received industrial training in my second year, and now I try out my experience.';
+      'Since graduating in 2019, I began my career working with IT companies, where I gained valuable hands-on experience in professional environments. Alongside this, I also worked as a freelance developer, allowing me to take on a variety of projects and explore different technologies. Early in my journey, I completed industrial training that helped bridge the gap between academic knowledge and real-world application. Over the years, I’ve had the opportunity to collaborate with multinational companies both remotely—especially in Gulf countries and the USA—and on-site in Pakistan. These diverse experiences have greatly contributed to my growth and deepened my passion for building effective, technology-driven solutions.';
   static const String experienceOrg1Title = 'M5AZN - المخازن الالكترونية';
   static const String experienceOrg1Role = 'Full Stack Mobile Developer';
   static const String experienceOrg1Years = 'Mar 2023 - Present';
