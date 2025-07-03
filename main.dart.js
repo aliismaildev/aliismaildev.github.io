@@ -42491,34 +42491,34 @@ I(a){var s=null,r=t.p,q=A.bs(A.b([A.q0("assets/images/logo.jpg",250,250)],r),B.K
 return A.bL(s,new A.br(B.C1,A.bs(A.b([A.dP(A.b([q,B.KB,new A.vz(1,B.Cz,A.bs(A.b([A.cl("Hi, my name is",p.f,s),A.cl("Ali Ismail",p.b,s),A.cl(u._,p.r,B.bo),B.Y,B.h2],r),B.K,B.w,B.q),s)],r),B.K,B.bj,B.q),B.xx,new A.HM().acl()],r),B.K,B.w,B.q),s),B.l,B.bu,s,s,s,s,s,s,s)}}
 A.F7.prototype={
 I(a){var s=null,r=$.UA(),q=t.p,p=t.w
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.mh,B.aH,A.dn(A.dP(A.b([A.fV(A.bs(A.b([new A.cP().dE(u.l,"Biography")],q),B.C,B.w,B.q)),A.dn(s,s,A.bm(a,s,p).w.a.a*0.08),A.fV(A.bs(A.b([new A.cP().dE("Ali Ismail","Full Name"),B.aa,new A.cP().dE("Male (He/Him/His)","Gender"),B.aa,new A.cP().dE("July 26, 1996","Birthday"),B.aa,new A.cP().dE("Urdu (Native)\nEnglish (Professional)","Languages")],q),B.C,B.w,B.q)),A.dn(s,s,A.bm(a,s,p).w.a.a*0.08),A.fV(A.bs(A.b([new A.cP().dE("Pakistan","Nationality"),B.aa,new A.cP().dE("Lahore, Pakistan","Current Locations"),B.aa,new A.cP().dE("09:00 \u2013 18:00 (GMT+5)","Working Hours"),B.aa,new A.cP().dE(u.d,"Hobbies"),B.aa,new A.cP().dE(u.C,"Goal")],q),B.C,B.w,B.q))],q),B.C,B.w,B.q),s,s),B.aH,A.dn(A.dP(A.b([A.fV(new A.cr().p0(u.t,"assets/icons/student.png",$.bg().j(0),"Computing Student",$.bg())),A.dn(s,s,A.bm(a,s,p).w.a.a*0.03),A.fV(new A.cr().p0(u.M,"assets/icons/developer.png",$.bg().j(0),"Solution Developer",$.bg())),A.dn(s,s,A.bm(a,s,p).w.a.a*0.03),A.fV(new A.cr().p0(u.J,"assets/icons/volunteer.png",$.bg().j(0),"Community Volunteer",$.bg()))],q),B.C,B.w,B.q),s,s)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.mg,B.aH,A.dn(A.dP(A.b([A.fV(A.bs(A.b([new A.cP().dE(u.l,"Biography")],q),B.C,B.w,B.q)),A.dn(s,s,A.bm(a,s,p).w.a.a*0.08),A.fV(A.bs(A.b([new A.cP().dE("Ali Ismail","Full Name"),B.aa,new A.cP().dE("Male (He/Him/His)","Gender"),B.aa,new A.cP().dE("July 26, 1996","Birthday"),B.aa,new A.cP().dE("Urdu (Native)\nEnglish (Professional)","Languages")],q),B.C,B.w,B.q)),A.dn(s,s,A.bm(a,s,p).w.a.a*0.08),A.fV(A.bs(A.b([new A.cP().dE("Pakistan","Nationality"),B.aa,new A.cP().dE("Lahore, Pakistan","Current Locations"),B.aa,new A.cP().dE("09:00 \u2013 18:00 (GMT+5)","Working Hours"),B.aa,new A.cP().dE(u.d,"Hobbies"),B.aa,new A.cP().dE(u.C,"Goal")],q),B.C,B.w,B.q))],q),B.C,B.w,B.q),s,s),B.aH,A.dn(A.dP(A.b([A.fV(new A.cr().p0(u.t,"assets/icons/student.png",$.bg().j(0),"Computing Student",$.bg())),A.dn(s,s,A.bm(a,s,p).w.a.a*0.03),A.fV(new A.cr().p0(u.M,"assets/icons/developer.png",$.bg().j(0),"Solution Developer",$.bg())),A.dn(s,s,A.bm(a,s,p).w.a.a*0.03),A.fV(new A.cr().p0(u.J,"assets/icons/volunteer.png",$.bg().j(0),"Community Volunteer",$.bg()))],q),B.C,B.w,B.q),s,s)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.F8.prototype={
 I(a){var s,r=null,q="Credential ID 3628-306-18",p=$.UC(),o=t.t,n=t.Zb,m=A.b([A.b([0,1,2],o)],n)
 m=A.fV(new A.cr().ye("mms","https://uol.edu.pk",$.bg().j(0),"The University of Lahore",$.bg(),m,[u.s,u.v,"2015-2019"]))
 s=A.dn(r,r,A.bm(a,r,t.w).w.a.a*0.05)
 n=A.b([A.b([0,1,2],o),A.b([3,4,5],o)],n)
 o=t.p
-return A.bL(r,new A.br(B.by,A.bs(A.b([B.md,A.dP(A.b([m,s,A.fV(new A.cr().ye("nibm","https://ict-trainings.com/",$.bg().j(0),"ICT Trainings Institute",$.bg(),n,["ICT Certified Android Developer","Issued Sep 2018",q,"ICT Certified Java Developer ","Issued Sep 2018",q]))],o),B.C,B.dN,B.q)],o),B.C,B.w,B.q),r),B.l,B.aI,r,r,r,p,r,r,r)}}
+return A.bL(r,new A.br(B.by,A.bs(A.b([B.mc,A.dP(A.b([m,s,A.fV(new A.cr().ye("nibm","https://ict-trainings.com/",$.bg().j(0),"ICT Trainings Institute",$.bg(),n,["ICT Certified Android Developer","Issued Sep 2018",q,"ICT Certified Java Developer ","Issued Sep 2018",q]))],o),B.C,B.dN,B.q)],o),B.C,B.w,B.q),r),B.l,B.aI,r,r,r,p,r,r,r)}}
 A.F9.prototype={
 I(a){var s=null,r=$.UD(),q=$.UM(),p=A.a_(q).h("ag<1,dt>")
-return A.bL(s,A.ap8(A.bs(A.b([B.mc,B.Y,A.kN(A.a9S(A.af(new A.ag(q,new A.Xh(),p),!0,p.h("aH.E")),30,40),s,s)],t.p),B.C,B.w,B.q),s,B.by,s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,A.ap8(A.bs(A.b([B.mh,B.Y,A.kN(A.a9S(A.af(new A.ag(q,new A.Xh(),p),!0,p.h("aH.E")),30,40),s,s)],t.p),B.C,B.w,B.q),s,B.by,s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.Xh.prototype={
 $1(a){return new A.dt(B.yT,a,null)},
 $S:124}
 A.Fa.prototype={
 I(a){var s=null,r=$.UF(),q=$.UO(),p=A.a_(q).h("ag<1,dt>")
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.mf,B.Y,A.kN(A.a9S(A.af(new A.ag(q,new A.Xi(),p),!0,p.h("aH.E")),30,40),s,s)],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.me,B.Y,A.kN(A.a9S(A.af(new A.ag(q,new A.Xi(),p),!0,p.h("aH.E")),30,40),s,s)],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.Xi.prototype={
 $1(a){return new A.dt(B.yU,a,null)},
 $S:124}
 A.Fb.prototype={
 I(a){var s=null,r=$.UE(),q=t.p
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.mg,A.dP(A.b([A.fV(new A.cr().yf("flutterscope",!0,$.bg().j(0),"Content Creator","FlutterScope",$.bg(),u.e,"January 2022 - Present")),A.dn(s,s,A.bm(a,s,t.w).w.a.a*0.05),A.fV(new A.cr().yf("mlsa",!0,$.bg().j(0),"Microsoft Learn Student Ambassador","Microsoft",$.bg(),u.R,"October 2022 - Present"))],q),B.C,B.dN,B.q)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.mf,A.dP(A.b([A.fV(new A.cr().yf("flutterscope",!0,$.bg().j(0),"Content Creator","FlutterScope",$.bg(),u.e,"January 2022 - Present")),A.dn(s,s,A.bm(a,s,t.w).w.a.a*0.05),A.fV(new A.cr().yf("mlsa",!0,$.bg().j(0),"Microsoft Learn Student Ambassador","Microsoft",$.bg(),u.R,"October 2022 - Present"))],q),B.C,B.dN,B.q)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.Fc.prototype={
 I(a){var s,r=null,q=$.UB(),p=$.eK().p3,o=p.w.r
 p=p.r.w
 s=t.p
-return A.bL(r,new A.br(B.by,A.bs(A.b([B.me,A.dP(A.b([A.cl("Send me an email at",A.db(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.jP,A.h3(A.ev(r,A.kc(A.eB("ali.ismail.dev@gmail.com",r,A.db(r,r,B.ac,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.W,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.Xj(a),r,r,r,r,r,r),B.aA,r,r,r)],s),B.K,B.bj,B.q),B.aH,B.h2],s),B.K,B.w,B.q),r),B.l,B.aI,r,r,r,q,r,r,r)}}
+return A.bL(r,new A.br(B.by,A.bs(A.b([B.md,A.dP(A.b([A.cl("Send me an email at",A.db(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.jP,A.h3(A.ev(r,A.kc(A.eB("ali.ismail.dev@gmail.com",r,A.db(r,r,B.ac,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.W,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.Xj(a),r,r,r,r,r,r),B.aA,r,r,r)],s),B.K,B.bj,B.q),B.aH,B.h2],s),B.K,B.w,B.q),r),B.l,B.aI,r,r,r,q,r,r,r)}}
 A.Xj.prototype={
 $0(){var s,r=null
 A.uH(B.l2)
@@ -42583,12 +42583,12 @@ I(a){var s=null,r=A.q0("assets/images/logo.jpg",250,250),q=$.eK().p3,p=t.p
 return A.bL(s,new A.br(B.C_,A.bs(A.b([A.bs(A.b([r,B.aH,A.bs(A.b([A.cl("Hi, my name is",q.f,s),A.cl("Ali Ismail",q.b,B.bo),A.cl(u._,q.r,B.bo),B.Y,B.h2],p),B.K,B.w,B.q)],p),B.K,B.bj,B.q),B.aH],p),B.K,B.w,B.q),s),B.l,B.bu,s,s,s,s,s,s,s)}}
 A.Ha.prototype={
 I(a){var s=null,r=$.UA(),q=t.p
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.mh,B.aH,A.dn(A.bs(A.b([new A.cP().dE(u.l,"Biography"),B.aa,new A.cP().dE("Ali Ismail","Full Name"),B.aa,new A.cP().dE("Male (He/Him/His)","Gender"),B.aa,new A.cP().dE("July 26, 1996","Birthday"),B.aa,new A.cP().dE("Urdu (Native)\nEnglish (Professional)","Languages"),B.aa,new A.cP().dE("Pakistan","Nationality"),B.aa,new A.cP().dE("Lahore, Pakistan","Current Locations"),B.aa,new A.cP().dE("09:00 \u2013 18:00 (GMT+5)","Working Hours"),B.aa,new A.cP().dE(u.d,"Hobbies"),B.aa,new A.cP().dE(u.C,"Goal")],q),B.C,B.w,B.q),s,s),B.aH,A.dn(A.bs(A.b([new A.cr().p0(u.t,"assets/icons/student.png",$.bg().j(0),"Computing Student",$.bg()),B.Y,new A.cr().p0(u.M,"assets/icons/developer.png",$.bg().j(0),"Solution Developer",$.bg()),B.Y,new A.cr().p0(u.J,"assets/icons/volunteer.png",$.bg().j(0),"Community Volunteer",$.bg())],q),B.C,B.w,B.q),s,s)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.mg,B.aH,A.dn(A.bs(A.b([new A.cP().dE(u.l,"Biography"),B.aa,new A.cP().dE("Ali Ismail","Full Name"),B.aa,new A.cP().dE("Male (He/Him/His)","Gender"),B.aa,new A.cP().dE("July 26, 1996","Birthday"),B.aa,new A.cP().dE("Urdu (Native)\nEnglish (Professional)","Languages"),B.aa,new A.cP().dE("Pakistan","Nationality"),B.aa,new A.cP().dE("Lahore, Pakistan","Current Locations"),B.aa,new A.cP().dE("09:00 \u2013 18:00 (GMT+5)","Working Hours"),B.aa,new A.cP().dE(u.d,"Hobbies"),B.aa,new A.cP().dE(u.C,"Goal")],q),B.C,B.w,B.q),s,s),B.aH,A.dn(A.bs(A.b([new A.cr().p0(u.t,"assets/icons/student.png",$.bg().j(0),"Computing Student",$.bg()),B.Y,new A.cr().p0(u.M,"assets/icons/developer.png",$.bg().j(0),"Solution Developer",$.bg()),B.Y,new A.cr().p0(u.J,"assets/icons/volunteer.png",$.bg().j(0),"Community Volunteer",$.bg())],q),B.C,B.w,B.q),s,s)],q),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.Hb.prototype={
 I(a){var s=null,r="Credential ID 3628-306-18",q=$.UC(),p=t.t,o=t.Zb,n=A.b([A.b([0,1,2],p)],o)
 n=new A.cr().ye("mms","https://uol.edu.pk",$.bg().j(0),"The University of Lahore",$.bg(),n,[u.s,u.v,"2015-2019"])
 o=A.b([A.b([0,1,2],p),A.b([3,4,5],p)],o)
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.md,B.aa,n,B.Y,new A.cr().ye("nibm","https://ict-trainings.com/",$.bg().j(0),"ICT Trainings Institute",$.bg(),o,["ICT Certified Android Developer","Issued Sep 2018",r,"ICT Certified Java Developer ","Issued Sep 2018",r])],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,q,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.mc,B.aa,n,B.Y,new A.cr().ye("nibm","https://ict-trainings.com/",$.bg().j(0),"ICT Trainings Institute",$.bg(),o,["ICT Certified Android Developer","Issued Sep 2018",r,"ICT Certified Java Developer ","Issued Sep 2018",r])],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,q,s,s,s)}}
 A.wx.prototype={
 am(){return new A.OB(A.aov(),B.k)}}
 A.OB.prototype={
@@ -42600,12 +42600,12 @@ I(a){var s,r,q,p,o,n,m,l,k,j=this,i=null
 $.UM()
 s=$.UD()
 r=t.p
-q=A.bL(i,A.dP(A.b([A.vX(i,i,A.vW(B.ml,i),i,new A.adc(j),i,i),A.fV(A.aoy(j.d,new A.add(),6,new A.ade(j))),A.vX(i,B.fn,A.vW(B.mm,i),i,new A.adf(j),i,i)],r),B.K,B.w,B.q),B.l,i,new A.aw(0,1/0,0,400),i,i,i,i,i,i)
+q=A.bL(i,A.dP(A.b([A.vX(i,i,A.vW(B.ml,i),i,new A.adc(j),i,i),A.fV(A.aoy(j.d,new A.add(),6,new A.ade(j))),A.vX(i,B.fn,A.vW(B.mm,i),i,new A.adf(j),i,i)],r),B.K,B.w,B.q),B.l,i,new A.aw(0,1/0,0,570),i,i,i,i,i,i)
 p=J.a15(6,t.l7)
 for(o=j.e,n=0;n<6;++n){m=o===n
 l=m?12:8
 k=m?12:8
-p[n]=A.bL(i,i,B.l,i,i,new A.cQ(m?B.ac:B.fn,i,i,i,i,i,B.et),k,i,new A.ay(4,4,4,4),i,l)}return A.bL(i,new A.br(B.lR,A.bs(A.b([B.mc,B.aa,q,A.dP(p,B.K,B.bj,B.q),A.dn(i,16,i)],r),B.C,B.w,B.q),i),B.l,B.aI,i,i,i,s,i,i,i)}}
+p[n]=A.bL(i,i,B.l,i,i,new A.cQ(m?B.ac:B.fn,i,i,i,i,i,B.et),k,i,new A.ay(4,4,4,4),i,l)}return A.bL(i,new A.br(B.lR,A.bs(A.b([B.mh,B.aa,q,A.dP(p,B.K,B.bj,B.q),A.dn(i,16,i)],r),B.C,B.w,B.q),i),B.l,B.aI,i,i,i,s,i,i,i)}}
 A.adc.prototype={
 $0(){var s=this.a
 return s.KS(s.e-1)},
@@ -42640,7 +42640,7 @@ p=J.a15(4,t.l7)
 for(o=j.e,n=0;n<4;++n){m=o===n
 l=m?12:8
 k=m?10:8
-p[n]=A.bL(i,i,B.l,i,i,new A.cQ(m?B.ac:B.fn,i,i,i,i,i,B.et),k,i,new A.ay(4,4,4,4),i,l)}return A.bL(i,new A.br(B.lR,A.bs(A.b([B.mf,B.aa,q,A.dP(p,B.K,B.bj,B.q)],r),B.C,B.w,B.q),i),B.l,B.aI,i,i,i,s,i,i,i)}}
+p[n]=A.bL(i,i,B.l,i,i,new A.cQ(m?B.ac:B.fn,i,i,i,i,i,B.et),k,i,new A.ay(4,4,4,4),i,l)}return A.bL(i,new A.br(B.lR,A.bs(A.b([B.me,B.aa,q,A.dP(p,B.K,B.bj,B.q)],r),B.C,B.w,B.q),i),B.l,B.aI,i,i,i,s,i,i,i)}}
 A.adh.prototype={
 $0(){var s=this.a
 return s.JY(s.e-1)},
@@ -42661,12 +42661,12 @@ return s.JY(s.e+1)},
 $S:0}
 A.Hc.prototype={
 I(a){var s=null,r=$.UE()
-return A.bL(s,new A.br(B.by,A.bs(A.b([B.mg,B.aa,new A.cr().yf("flutterscope",!0,$.bg().j(0),"Content Creator","FlutterScope",$.bg(),u.e,"January 2022 - Present"),B.Y,new A.cr().yf("mlsa",!0,$.bg().j(0),"Microsoft Learn Student Ambassador","Microsoft",$.bg(),u.R,"October 2022 - Present")],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
+return A.bL(s,new A.br(B.by,A.bs(A.b([B.mf,B.aa,new A.cr().yf("flutterscope",!0,$.bg().j(0),"Content Creator","FlutterScope",$.bg(),u.e,"January 2022 - Present"),B.Y,new A.cr().yf("mlsa",!0,$.bg().j(0),"Microsoft Learn Student Ambassador","Microsoft",$.bg(),u.R,"October 2022 - Present")],t.p),B.C,B.w,B.q),s),B.l,B.aI,s,s,s,r,s,s,s)}}
 A.Hd.prototype={
 I(a){var s,r=null,q=$.UB(),p=$.eK().p3,o=p.w.r
 p=p.r.w
 s=t.p
-return A.bL(r,A.bs(A.b([B.aH,new A.br(B.Cd,A.bs(A.b([B.me,B.aa,A.cl("Send me an email at",A.db(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.KC,A.h3(A.ev(r,A.kc(A.eB("ali.ismail.dev@gmail.com",r,A.db(r,r,B.ac,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.W,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a20(a),r,r,r,r,r,r),B.aA,r,r,r)],s),B.K,B.w,B.q),r),B.Y,B.h2,B.aH],s),B.K,B.w,B.q),B.l,B.aI,r,r,r,q,r,r,r)}}
+return A.bL(r,A.bs(A.b([B.aH,new A.br(B.Cd,A.bs(A.b([B.md,B.aa,A.cl("Send me an email at",A.db(r,r,B.i,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),B.KC,A.h3(A.ev(r,A.kc(A.eB("ali.ismail.dev@gmail.com",r,A.db(r,r,B.ac,r,r,r,r,r,r,r,r,o,r,r,p,r,r,!0,r,r,r,r,r,r,r,r),r),"Click to copy email to clipboard"),B.W,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a20(a),r,r,r,r,r,r),B.aA,r,r,r)],s),B.K,B.w,B.q),r),B.Y,B.h2,B.aH],s),B.K,B.w,B.q),B.l,B.aI,r,r,r,q,r,r,r)}}
 A.a20.prototype={
 $0(){var s,r=null
 A.uH(B.l2)
@@ -80866,7 +80866,7 @@ B.yQ=new A.pf(B.wI,B.jp)
 B.wJ=new A.JD(1,"fast")
 B.yR=new A.pf(B.wJ,B.jp)
 B.yS=new A.pf(B.wI,null)
-B.yT=new A.aw(0,400,0,400)
+B.yT=new A.aw(0,400,0,550)
 B.yU=new A.aw(0,400,0,750)
 B.yV=new A.aw(40,40,40,40)
 B.yW=new A.aw(56,56,56,56)
@@ -81470,12 +81470,12 @@ B.CH=new A.jC("Invalid envelope",null,null)
 B.ma=new A.pU(0,"ltr")
 B.mb=new A.pU(1,"rtl")
 B.ir=new A.pU(3,"sandwich")
-B.mc=new A.jD("Experience","Since I started my diploma in 2019, I've started to learn and apply my knowledge in different places. So I started working as a freelance solution developer, and with time, I fell in love with different technologies. I received industrial training in my second year, and now I try out my experience.",null)
-B.md=new A.jD("Education","My educational background is not specific in any particular way and has come from various places. In this section, you can find out about my formal and other sources from 2003 to now. So, here are my school, undergraduate institution, and other learning platforms that I've been involving for education.",null)
-B.me=new A.jD("Contact","Hey there! Thanks for checking out my profile. I truly appreciate your time. Feel free to reach out if you have any questions or just want to have a chat. I'm always open to meeting new people and exchanging ideas. While I\u2019m not very active on social media, you can still find and connect with me there. For anything important or work-related, drop me an email. I usually respond within 12 to 24 hours.",null)
-B.mf=new A.jD("Work Showcase","From corporate systems to freelance projects, this is where I highlight the apps and platforms I\u2019ve helped bring to life. It covers everything from mobile app development and backend integration to UI/UX design and feature optimization. Each project reflects my hands-on approach, problem-solving mindset, and commitment to delivering high-quality digital solutions.",null)
-B.mg=new A.jD("Volunteering","Volunteering is an amazing way for me to give back to communities and make a difference. It's also a terrific opportunity to meet new people, learn new skills, and gain valuable experience. I do volunteer work for many different social and technical organizations. These are more focused organizations where I am presently volunteering.",null)
-B.mh=new A.jD("About Me","I am an experienced IT professional with over 6 years in software development, having worked on a wide range of projects from small-scale applications to large enterprise solutions. Over the past 5 years, I\u2019ve specialized in Flutter, adding hybrid mobile app development to my core skill set. My focus now is on building high-quality, cross-platform mobile applications using Flutter, combining performance with seamless user experiences.",null)
+B.mc=new A.jD("Education","My educational background is not specific in any particular way and has come from various places. In this section, you can find out about my formal and other sources from 2003 to now. So, here are my school, undergraduate institution, and other learning platforms that I've been involving for education.",null)
+B.md=new A.jD("Contact","Hey there! Thanks for checking out my profile. I truly appreciate your time. Feel free to reach out if you have any questions or just want to have a chat. I'm always open to meeting new people and exchanging ideas. While I\u2019m not very active on social media, you can still find and connect with me there. For anything important or work-related, drop me an email. I usually respond within 12 to 24 hours.",null)
+B.me=new A.jD("Work Showcase","From corporate systems to freelance projects, this is where I highlight the apps and platforms I\u2019ve helped bring to life. It covers everything from mobile app development and backend integration to UI/UX design and feature optimization. Each project reflects my hands-on approach, problem-solving mindset, and commitment to delivering high-quality digital solutions.",null)
+B.mf=new A.jD("Volunteering","Volunteering is an amazing way for me to give back to communities and make a difference. It's also a terrific opportunity to meet new people, learn new skills, and gain valuable experience. I do volunteer work for many different social and technical organizations. These are more focused organizations where I am presently volunteering.",null)
+B.mg=new A.jD("About Me","I am an experienced IT professional with over 6 years in software development, having worked on a wide range of projects from small-scale applications to large enterprise solutions. Over the past 5 years, I\u2019ve specialized in Flutter, adding hybrid mobile app development to my core skill set. My focus now is on building high-quality, cross-platform mobile applications using Flutter, combining performance with seamless user experiences.",null)
+B.mh=new A.jD("Experience","Since graduating in 2019, I began my career working with IT companies, where I gained valuable hands-on experience in professional environments. Alongside this, I also worked as a freelance developer, allowing me to take on a variety of projects and explore different technologies. Early in my journey, I completed industrial training that helped bridge the gap between academic knowledge and real-world application. Over the years, I\u2019ve had the opportunity to collaborate with multinational companies both remotely\u2014especially in Gulf countries and the USA\u2014and on-site in Pakistan. These diverse experiences have greatly contributed to my growth and deepened my passion for building effective, technology-driven solutions.",null)
 B.bA=new A.Gp(0,"accepted")
 B.a8=new A.Gp(1,"rejected")
 B.mi=new A.nj(0,"pointerEvents")
@@ -83968,8 +83968,8 @@ p=$.bg()
 p=new A.cr().ai8("m5azn-wms-banner","M5azn WMS is a complete warehouse management solution to track inventory, manage orders, and streamline shipping. It automates manual tasks, ensures stock accuracy, and supports smooth, scalable operations for growing businesses.",A.b(["Flutter","REST API","Firebase","Payment methods","OneSignal","Figma"],m),"M5AZN WMS",p,"https://m5aznwms.com")
 o=$.bg()
 return A.b([n,q,p,new A.cr().yg("https://play.google.com/store/apps/details?id=co.yaqut.app&hl=en","rufoof-banner","https://apps.apple.com/sa/app/%D8%B1%D9%81%D9%88%D9%81-%D9%83%D8%AA%D8%A8-%D8%B5%D9%88%D8%AA%D9%8A%D8%A9-%D9%88%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/id1115820042","Ruvoof is a free eBook app with a rich library of Arabic and English books. It features fast reading, smart search, note-taking, and a unique rewards system\u2014making reading more enjoyable and accessible across all your devices.",A.b(["Flutter","REST API","Firebase","Payment methods","OneSignal","Figma"],m),"Rufoof: eBooks & Audiobooks",o,"https://rufoof.com")],t.p)})
-s($,"aJX","UM",()=>{var q="Android, Flutter, Dart, Firebase, Git, REST API, JSON Parsing & UI UX Designing.",p="https://www.solobits.dev",o="(Remote & Part-Time)"
-return A.b([new A.cr().tb("m5azn",!0,"https://m5azn.com",$.bg().j(0),"Full Stack Mobile Developer","M5AZN - \u0627\u0644\u0645\u062e\u0627\u0632\u0646 \u0627\u0644\u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629","(Remote)",$.bg(),"Mobile, Desktop, Web development, UI UX, Tech Support Assistant & Data Analysis.","Mar 2023 - Present"),new A.cr().Fw("magnatec",!0,"https://magnatecsystems.com",$.bg().j(0),"Senior Flutter Developer","Magnatec Systems Private Limited",$.bg(),q,"Feb 2021 - Mar 2023"),new A.cr().tb("solobits",!0,p,$.bg().j(0),"Flutter Project Manager","SoloBits.dev",o,$.bg(),q,"Mar 2022 - Feb 2023"),new A.cr().tb("telebu",!0,p,$.bg().j(0),"Android Consultant","Telebu Communications LLP",o,$.bg(),q,"Aug 2021 - Feb 2022"),new A.cr().Fw("highapp",!0,"http://highapp.co.uk/",$.bg().j(0),"Flutter Developer","HighApp Solutions",$.bg(),q,"Sep 2020 - Feb 2021"),new A.cr().Fw("technovier",!0,"https://www.technovier.com",$.bg().j(0),"Associate Software Engineer","Technovier",$.bg(),q,"Oct 2019 - Sep 2020")],t.p)})
+s($,"aJX","UM",()=>{var q="https://www.solobits.dev",p="(Remote & Part-Time)"
+return A.b([new A.cr().tb("m5azn",!0,"https://m5azn.com",$.bg().j(0),"Full Stack Mobile Developer","M5AZN - \u0627\u0644\u0645\u062e\u0627\u0632\u0646 \u0627\u0644\u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629","(Remote)",$.bg(),"There, I worked as a Full Stack Mobile Developer, leading the development of M5AZN\u2019s mobile app and a comprehensive WMS suite to streamline warehouse and logistics operations. I designed and built high-impact solutions for inventory, dispatch, barcode scanning, and real-time stock updates. I also spearheaded the launch of Twsaa, a new SaaS-based mobile and backend system, contributing to the company\u2019s digital transformation.","Mar 2023 - Present"),new A.cr().Fw("magnatec",!0,"https://magnatecsystems.com",$.bg().j(0),"Senior Flutter Developer","Magnatec Systems Private Limited",$.bg(),"As a Senior Flutter Developer, I built robust POS modules for SMACC and SCRIBES ERP systems, applying design patterns like MVC, MVP, and MVVM. I integrated REST/SOAP APIs, Firebase, Moor DB, and Google services to deliver scalable features. I focused on writing clean, testable code with high coverage, and collaborated closely with QA, product, and design teams to tackle complex Android issues and ensure smooth, stable releases.","Feb 2021 - Mar 2023"),new A.cr().tb("solobits",!0,q,$.bg().j(0),"Flutter Project Manager","SoloBits.dev",p,$.bg(),"As a Flutter Project Manager, I led the development of key features for Dailyway, a carpool app designed to ensure smooth and reliable user-driver interactions. I also developed the admin panel using Flutter Web, integrating Google Maps APIs, Firestore, and Google Cloud Storage for real-time data and map services.","Mar 2022 - Feb 2023"),new A.cr().tb("telebu",!0,q,$.bg().j(0),"Android Consultant","Telebu Communications LLP",p,$.bg(),"I developed a Flutter plugin for the native video conferencing SDK Telebu Join, enabling smooth cross-platform in-app communication. I also contributed to FaraPay, a digital payment solution, by implementing new features, optimizing performance, and ensuring a seamless user experience on both Android and iOS.","Aug 2021 - Feb 2022"),new A.cr().Fw("highapp",!0,"http://highapp.co.uk/",$.bg().j(0),"Flutter Developer","HighApp Solutions",$.bg(),"Led the development, testing, and on-time delivery of various freelance mobile applications using Flutter in a fast-paced, project-based environment. Managed and assigned daily tasks across multiple projects to ensure smooth collaboration and productivity among developers. Successfully integrated REST/SOAP APIs, Firebase (Firestore, Cloud Messaging), push notifications, and socket-based communication to deliver high-performance and feature-rich app solutions.","Sep 2020 - Feb 2021"),new A.cr().Fw("technovier",!0,"https://www.technovier.com",$.bg().j(0),"Associate Software Engineer","Technovier",$.bg(),"Developed and delivered web and mobile applications using Flutter, Laravel, and modern web technologies. Built RESTful APIs for smooth backend-frontend integration. Maintained and customized the company\u2019s WordPress website, including themes and plugins. Involved in the full development lifecycle\u2014from requirements to deployment and support\u2014ensuring timely and high-quality delivery.","Oct 2019 - Sep 2020")],t.p)})
 s($,"aFY","eK",()=>A.zb(B.a7,B.Ac.abD(B.bu),"Poppins",B.CP,B.ac,B.bu,B.KL,B.LQ,B.Q2,B.Qi,null))
 s($,"aIT","au1",()=>A.ak_(1,1,500))
 r($,"aFX","asF",()=>new A.DQ(B.t,B.t))
