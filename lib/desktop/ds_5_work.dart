@@ -23,20 +23,20 @@ class DS5Work extends StatelessWidget {
                 title: DataValues.workShowCaseTitle,
                 description: DataValues.workShowCaseDescription),
             const SizedBox(height: 20),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              padding: const EdgeInsets.only(bottom: 15.0),
-              itemCount: workData.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 4,
-                crossAxisSpacing: 30.0,
-                mainAxisSpacing: 30.0,
-                childAspectRatio: 0.5,
+            Center(
+              child: Wrap(
+                spacing: 40.0, // horizontal spacing
+                runSpacing: 30.0, // vertical spacing
+                children: workData.map((widget) {
+                  return ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      maxHeight: 750,
+                      maxWidth: 400, // behaves like maxCrossAxisExtent
+                    ),
+                    child: widget,
+                  );
+                }).toList(),
               ),
-              itemBuilder: (context, index) {
-                return workData[index];
-              },
             ),
           ],
         ),

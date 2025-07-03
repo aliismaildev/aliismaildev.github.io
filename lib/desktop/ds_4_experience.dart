@@ -25,20 +25,20 @@ class DS4Experience extends StatelessWidget {
               description: DataValues.experienceDescription,
             ),
             const SizedBox(height: 20),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              padding: const EdgeInsets.only(bottom: 15.0),
-              itemCount: experienceData.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 16.0,
-                mainAxisSpacing: 16.0,
-                childAspectRatio: 1.3,
+            Center(
+              child: Wrap(
+                spacing: 40.0, // horizontal spacing
+                runSpacing: 30.0, // vertical spacing
+                children: experienceData.map((widget) {
+                  return ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      maxHeight: 400,
+                      maxWidth: 400, // behaves like maxCrossAxisExtent
+                    ),
+                    child: widget,
+                  );
+                }).toList(),
               ),
-              itemBuilder: (context, index) {
-                return experienceData[index];
-              },
             ),
           ],
         ),
